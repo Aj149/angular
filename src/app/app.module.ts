@@ -3,15 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TrabajoComponent } from './empleados/trabajo.componenent';
+import { SharedModule } from './shared/shared.module';
+import { WebModule } from './web/web.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
-    AppComponent, TrabajoComponent
-  ],
+  AppComponent, ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    WebModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
