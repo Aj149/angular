@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { WebModule } from './web/web.module';
 import { AuthModule } from './auth/auth.module';
+import { NopageFoundComponent } from './nopage-found/nopage-found.component';
 
 @NgModule({
   declarations: [
-  AppComponent, ],
+  AppComponent,
+  NopageFoundComponent
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
