@@ -9,16 +9,12 @@ import { NopageFoundComponent } from '../nopage-found/nopage-found.component';
 
 const routes: Routes = [
   {
-    path:"dashboard", component: WebComponent,
+    path:"dashboard", component: DashboardComponent,
   children:[
-  { path:"",component:DashboardComponent},
   { path:"product",component:ProductComponent},
   { path:"category",component:CategoryComponent},
-  ] 
+  ]
 },
-  // {path:"product", component:ProductComponent},
-  // {path:"Category", component:CategoryComponent},
-  // {path:"",redirectTo:"/dashboard", pathMatch:"full"},
    {path:"**", component:NopageFoundComponent}
  ];
  
